@@ -1,11 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
 :root {
     --primary: #789776;
     --secondary: #5B6158;
     --bg: #FEFBF7;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 body {
@@ -51,13 +49,12 @@ header {
 }
 
 .phone-number {
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     font-weight: 500;
-    font-style: Medium;
     font-size: 12px;
     line-height: 100%;
-    letter-spacing: 0%;
     text-transform: uppercase;
+    font-variant-numeric: lining-nums proportional-nums;
     color: var(--secondary);
     white-space: nowrap;
 }
