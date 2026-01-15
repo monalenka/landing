@@ -22,7 +22,7 @@
     font-family: 'New-YorkerC', serif;
     font-size: 48px;
     line-height: 110%;
-    color: #637D61;
+    color: var(--dark);
     font-weight: 400;
 }
 
@@ -129,7 +129,7 @@
     font-family: 'New-YorkerC', serif;
     font-size: 32px;
     line-height: 120%;
-    color: #637D61;
+    color: var(--dark);
     font-weight: 400;
 }
 
@@ -148,7 +148,6 @@
 }
 
 @media (min-width: 768px) {
-
     .hero {
         position: relative;
         max-width: 767px;
@@ -346,5 +345,43 @@
         height: 100%;
         display: block;
         object-fit: contain;
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero {
+        max-width: 1440px;
+        height: auto;
+        min-height: 604px;
+    }
+
+    .hero__title {
+        left: 200px;
+    }
+
+    .hero__subtitle {
+        left: 200px;
+    }
+
+    .hero__stats {
+        left: 200px;
+    }
+
+    .hero__image-wrapper {
+        width: 488px;
+        height: 604px;
+        right: 200px;
+        left: auto;
+    }
+
+    .hero__flower {
+        left: auto;
+        right: calc(200px + 488px - 165px);
+    }
+
+    .hero__navigation {
+        right: 200px;
+        top: calc(103px + 604px + 32px);
+        left: auto;
     }
 }
