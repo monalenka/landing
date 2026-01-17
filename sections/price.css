@@ -5,7 +5,7 @@
 }
 
 .price__title {
-    font-family: 'New-YorkerC', serif;
+    font-family: var(--f-N);
     font-size: 26px;
     line-height: 120%;
     letter-spacing: 0.007em;
@@ -13,7 +13,7 @@
 }
 
 .price__note {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--f-R);
     font-size: 13px;
     line-height: 135%;
     color: var(--secondary);
@@ -21,7 +21,7 @@
 }
 
 .price__info {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--f-R);
     font-size: 13px;
     line-height: 135%;
     color: var(--secondary);
@@ -48,7 +48,7 @@
 }
 
 .single-session__price {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--f-R);
     font-weight: 300;
     font-size: 32px;
     color: var(--secondary);
@@ -74,7 +74,7 @@
 .single-session__count {
     width: 14px;
     height: 23px;
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--f-R);
     font-weight: 400;
     font-size: 32px;
     line-height: 120%;
@@ -84,7 +84,7 @@
 
 .single-session__text {
     height: 10px;
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--f-R);
     font-size: 14px;
     line-height: 120%;
     color: var(--secondary);
@@ -104,7 +104,7 @@
 }
 
 .price__button-text {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--f-R);
     font-size: 13px;
     line-height: 15px;
     letter-spacing: 0.05em;
@@ -137,7 +137,7 @@
 }
 
 .price-card__count {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--f-R);
     font-size: 32px;
     line-height: 120%;
     color: var(--secondary);
@@ -146,7 +146,7 @@
 
 .price-card__text {
     width: 65px;
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--f-R);
     font-size: 14px;
     line-height: 120%;
     color: var(--secondary);
@@ -156,7 +156,7 @@
 }
 
 .price-card__month-price {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--f-R);
     font-weight: 300;
     font-size: 32px;
     line-height: 38px;
@@ -185,7 +185,7 @@
 }
 
 .price-card__offer-count {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--f-R);
     font-size: 32px;
     line-height: 120%;
     color: var(--primary);
@@ -193,7 +193,7 @@
 }
 
 .price-card__offer-text {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--f-R);
     font-size: 14px;
     line-height: 120%;
     color: var(--primary);
@@ -201,7 +201,7 @@
 }
 
 .price-card__session-price {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--f-R);
     font-weight: 300;
     font-size: 32px;
     line-height: 38px;
@@ -217,7 +217,7 @@
 }
 
 .price-card__unlimited-text {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--f-R);
     font-size: 14px;
     line-height: 120%;
     color: var(--primary);
@@ -313,7 +313,7 @@
     }
 
     .price__cards .price__button--tablet .price__button-text {
-        font-family: 'Raleway', sans-serif;
+        font-family: var(--f-R);
         font-size: 13px;
         line-height: 15px;
         letter-spacing: 0.05em;
