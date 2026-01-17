@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=375">
     <link rel="stylesheet" href="sections/header.css">
     <link rel="stylesheet" href="sections/hero.css">
+    <link rel="stylesheet" href="sections/directions.css">
+    <script src="js/directions.js"></script>
 </head>
 
 <body style="background:#FEFBF7">
@@ -81,6 +83,70 @@
                 <div class="stat">
                     <span class="stat__number">2</span>
                     <span class="stat__text">просторных зала для занятий</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="directions">
+        <div class="directions__header">
+            <h2 class="directions__title">Все направления в одном абонементе</h2>
+            <p class="directions__subtitle">Не определились с направлением? Мы подскажем!</p>
+        </div>
+
+        <div class="directions__tags">
+            <div class="tags-container">
+                <button class="tag active">Пилатес</button>
+                <button class="tag">Кундалини-йога</button>
+                <button class="tag">Хатха-йога</button>
+                <button class="tag">Здоровая спина</button>
+                <button class="tag">Флоу-йога</button>
+                <button class="tag">Стретчинг</button>
+            </div>
+        </div>
+
+        <div class="direction__card">
+            <div class="direction__image">
+                <img src="assets/images/woman-digital-disconnecting-home-by-doing-yoga.jpg" alt="Женщина хвастается"
+                    class="direction__image__img">
+            </div>
+
+            <div class="direction__info">
+
+                <div class="direction__details">
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <img src="assets/images/calendar.svg" alt="Календарь">
+                        </div>
+                        <span class="detail-text">Проходит по: пн, ср, пт</span>
+                    </div>
+
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <img src="assets/images/timer.svg" alt="Таймер">
+                        </div>
+                        <span class="detail-text">Длительность: 60 мин</span>
+                    </div>
+                </div>
+
+                <h3 class="direction__name"></h3>
+                <p class="direction__description">
+            </div>
+
+            <div class="direction__navigation">
+                <div class="navigation__arrows">
+                    <button class="arrow arrow--left">
+                        <img src="assets/images/left.png" alt="Предыдущий" class="arrow__icon">
+                    </button>
+                    <button class="arrow arrow--right">
+                        <img src="assets/images/right.png" alt="Следующий" class="arrow__icon">
+                    </button>
+                </div>
+
+                <div class="nav__progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
                 </div>
             </div>
         </div>

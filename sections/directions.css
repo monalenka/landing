@@ -1,0 +1,354 @@
+@font-face {
+    font-family: 'New-YorkerC';
+    src: url('../assets/fonts/New-YorkerC.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.directions {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 5px 0 40px;
+    position: relative;
+}
+
+.directions__header {
+    padding: 5px 24px 0px;
+}
+
+.directions__title {
+    font-family: 'New-YorkerC', serif;
+    font-size: 26px;
+    line-height: 120%;
+    letter-spacing: 0.007em;
+    color: #618B5E;
+}
+
+.directions__subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 130%;
+    color: #3F423D;
+}
+
+.directions__tags {
+    padding: 36px 0px 26px;
+    margin-left: -24px;
+    overflow-x: auto;
+}
+
+.directions__tags::-webkit-scrollbar {
+    display: none;
+}
+
+.tags-container {
+    display: flex;
+    gap: 16px;
+    width: max-content;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    height: 39px;
+    border: 1px solid #D2CFC7;
+    border-radius: 30px;
+    background: transparent;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    color: #5B6158;
+    cursor: pointer;
+}
+
+.tag:hover {
+    border-color: #789776;
+}
+
+.tag.active {
+    background: #789776;
+    border-color: #789776;
+    color: #FEFBF7;
+}
+
+.direction__card {
+    padding: 0 24px;
+}
+
+.direction__image {
+    width: 100%;
+    max-width: 327px;
+    height: 258px;
+    border-radius: 129px 0 0 0;
+    margin-bottom: 290px;
+    position: relative;
+    overflow: hidden;
+}
+
+.direction__image__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.direction__info {
+    margin-top: -250px;
+}
+
+.direction__name {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 130%;
+    color: #5B6158;
+    margin-bottom: 24px;
+}
+
+.direction__details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+    max-width: 325px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.detail-icon img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.detail-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    line-height: 135%;
+    color: #3F423D;
+}
+
+.direction__description {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    line-height: 135%;
+    color: #3F423D;
+    width: 100%;
+    max-width: 326px;
+    margin-bottom: 24px;
+}
+
+.direction__navigation {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 34px;
+    width: 327px;
+}
+
+.nav__progress {
+    flex: 1;
+    position: relative;
+    height: 1px;
+}
+
+.progress-bar {
+    width: 243px;
+    height: 1px;
+    background: #98958B;
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.progress-fill {
+    width: 85%;
+    height: 1px;
+    background: #789776;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navigation__arrows {
+    display: flex;
+    gap: 8px;
+    width: 76px;
+}
+
+.arrow {
+    width: 34px;
+    height: 34px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.arrow:hover {
+    opacity: 0.7;
+}
+
+.arrow__icon {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+@media (min-width: 768px) {
+    .directions {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 100px 0 0;
+    }
+
+    .directions__header {
+        padding: 0;
+        position: relative;
+        width: 100%;
+        height: 69px;
+    }
+
+    .directions__title {
+        position: absolute;
+        width: 428px;
+        height: 69px;
+        left: 36px;
+        top: 0;
+        font-size: 30px;
+        line-height: 120%;
+        margin-bottom: 0;
+        min-height: 69px;
+    }
+
+    .directions__subtitle {
+        position: absolute;
+        width: 245px;
+        height: 51px;
+        left: 494px;
+        top: 5px;
+        font-size: 14px;
+        line-height: 130%;
+    }
+
+    .directions__tags {
+        padding: 56px 36px 0;
+        margin: 0;
+        width: 100%;
+        overflow-x: visible;
+    }
+
+    .tags-container {
+        width: 100%;
+        min-width: auto;
+        justify-content: flex-start;
+        height: 47px;
+        padding: 0;
+    }
+
+    .tag {
+        padding: 16px 20px;
+        height: 47px;
+        font-size: 12px;
+    }
+
+    .tag.active {
+        background: #618B5E;
+        border-color: #618B5E;
+    }
+
+    .direction__card {
+        padding: 32px 36px 0;
+        display: flex;
+        flex-direction: row;
+        gap: 46px;
+        position: relative;
+    }
+
+    .direction__image {
+        width: 312px;
+        height: 422px;
+        margin-bottom: 0;
+        border-radius: 156px 156px 156px 0;
+    }
+
+    .direction__info {
+        margin-top: 0;
+        flex: 1;
+        position: relative;
+    }
+
+    .direction__name {
+        margin-bottom: 0px;
+        font-size: 15px;
+    }
+
+    .direction__details {
+        width: 100%;
+        margin-bottom: 46px;
+        gap: 23px;
+    }
+
+    .detail-item {
+        height: auto;
+    }
+
+    .detail-icon {
+        width: 27px;
+        height: 27px;
+        flex-shrink: 0;
+    }
+
+    .detail-text {
+        font-size: 16px;
+        line-height: 130%;
+        white-space: normal;
+    }
+
+    .direction__description {
+        width: 338px;
+        font-size: 14px;
+        line-height: 125%;
+        max-width: none;
+    }
+
+    .direction__navigation {
+        position: absolute;
+        width: 338px;
+        height: 34px;
+        left: 394px;
+        top: 420px;
+    }
+
+    .nav__progress {
+        position: absolute;
+        left: 84px;
+        width: 254px;
+        height: 1px;
+    }
+
+    .progress-bar {
+        width: 254px;
+        top: 50%;
+    }
+
+    .progress-fill {
+        width: 53px;
+        top: 50%;
+        background: #789776;
+    }
+}
