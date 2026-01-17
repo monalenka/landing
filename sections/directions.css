@@ -10,12 +10,8 @@
     width: 100%;
     max-width: 375px;
     margin: 0 auto;
-    padding: 5px 0 40px;
+    padding: 5px 0 0;
     position: relative;
-}
-
-.directions__header {
-    padding: 5px 24px 0px;
 }
 
 .directions__title {
@@ -71,10 +67,6 @@
     background: var(--primary);
     border-color: var(--primary);
     color: var(--bg);
-}
-
-.direction__card {
-    padding: 0 24px;
 }
 
 .direction__image {
@@ -207,8 +199,7 @@
 @media (min-width: 768px) {
     .directions {
         max-width: 768px;
-        margin: 0 auto;
-        padding: 100px 0 0;
+        padding: 100px 36px 0;
     }
 
     .directions__header {
@@ -222,7 +213,6 @@
         position: absolute;
         width: 428px;
         height: 69px;
-        left: 36px;
         top: 0;
         font-size: 30px;
         line-height: 120%;
@@ -241,7 +231,7 @@
     }
 
     .directions__tags {
-        padding: 56px 36px 0;
+        padding: 56px 0 0;
         margin: 0;
         width: 100%;
         overflow-x: visible;
@@ -267,7 +257,7 @@
     }
 
     .direction__card {
-        padding: 32px 36px 0;
+        padding: 32px 0 0;
         display: flex;
         flex-direction: row;
         gap: 46px;
@@ -325,7 +315,7 @@
         position: absolute;
         width: 338px;
         height: 34px;
-        left: 394px;
+        left: 350px;
         top: 420px;
     }
 

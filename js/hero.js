@@ -1,0 +1,55 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const heroSection = document.getElementById('hero-section');
+    heroSection.innerHTML = `
+        <h1 class="hero__title">Студия йоги и пилатеса</h1>
+        <div class="hero__image-wrapper">
+            <img src="assets/images/full-shot-woman-stretching-inside.png" alt="Женщина молодец"
+                class="hero__main-image">
+            <button class="hero__zap">
+                <span class="hero__zap-text">записаться</span>
+            </button>
+        </div>
+        <p class="hero__subtitle">Здесь мы поможем вам держать тело в тонусе, а душу - в гармонии.</p>
+
+        <div class="hero__flower">
+            <img src="assets/images/Flower.svg" alt="цветок для телефона" class="hero__flower-mobile">
+            <img src="assets/images/FlowerTablet.svg" alt="цветок для планшета" class="hero__flower-tablet">
+        </div>
+
+        <div class="hero__navigation">
+            <div class="navigation__counter">1/3</div>
+            <div class="navigation__progress">
+                <div class="navigation__progress-bar"></div>
+                <div class="navigation__progress-current"></div>
+            </div>
+            <div class="navigation__arrows">
+                <button class="arrow arrow--left">
+                    <img src="assets/images/left.png" alt="Предыдущий" class="arrow__icon">
+                </button>
+                <button class="arrow arrow--right">
+                    <img src="assets/images/right.png" alt="Следующий" class="arrow__icon">
+                </button>
+            </div>
+        </div>
+
+        <div class="hero__stats">
+            <div class="stats__image">
+                <img src="assets/images/full-shot-woman-meditating.jpg" alt="Женщина спокойная">
+            </div>
+            <div class="stats__list">
+                <div class="stat">
+                    <span class="stat__number">6</span>
+                    <span class="stat__text">направлений в одном абонементе</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number">4</span>
+                    <span class="stat__text">тренера с большим практическим опытом</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number">2</span>
+                    <span class="stat__text">просторных зала для занятий</span>
+                </div>
+            </div>
+        </div>
+    `;
+});

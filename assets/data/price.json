@@ -1,0 +1,44 @@
+{
+    "price": {
+        "title": "Стоимость наших тренировок",
+        "note": "Первая тренировка для новых клиентов <strong>бесплатно</strong>!",
+        "info": "После покупки абонемента его необходимо <strong>активировать в течение трех месяцев</strong> с момента приобретения (дата активации - первое занятие).",
+        "singleSession": {
+            "price": 800,
+            "currency": "₽",
+            "count": 1,
+            "description": "занятие"
+        },
+        "subscriptions": [
+            {
+                "id": 1,
+                "count": 4,
+                "description": "занятия в месяц",
+                "monthPrice": 3000,
+                "sessionPrice": 750
+            },
+            {
+                "id": 2,
+                "count": 8,
+                "description": "занятий в месяц",
+                "monthPrice": 5200,
+                "sessionPrice": 650
+            },
+            {
+                "id": 3,
+                "count": 12,
+                "description": "занятий в месяц",
+                "monthPrice": 6600,
+                "sessionPrice": 550
+            },
+            {
+                "id": 4,
+                "count": null,
+                "description": "безлимит на месяц",
+                "monthPrice": 8000,
+                "sessionPrice": null,
+                "note": "зависит от вашей активности"
+            }
+        ]
+    }
+}

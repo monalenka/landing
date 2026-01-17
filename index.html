@@ -2,154 +2,32 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=375">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
     <link rel="stylesheet" href="sections/header.css">
     <link rel="stylesheet" href="sections/hero.css">
     <link rel="stylesheet" href="sections/directions.css">
+    <link rel="stylesheet" href="sections/price.css">
+
+    <script src="js/header.js"></script>
+    <script src="js/hero.js"></script>
     <script src="js/directions.js"></script>
+    <script src="js/price.js"></script>
 </head>
 
 <body style="background:#FEFBF7">
-    <header class="header">
-        <div class="header__logo">
-            <img src="assets/images/Vector.svg" alt="штучка">
-            <span class="logo-text">BALANCE</span>
-        </div>
-
-        <nav class="header__nav">
-            <a href="#" class="nav__link">Программы</a>
-            <a href="#" class="nav__link">Прайс</a>
-            <a href="#" class="nav__link">Расписание</a>
-            <a href="#" class="nav__link">Отзывы</a>
-            <a href="#" class="nav__link">Контакты</a>
-        </nav>
-
-        <a href="tel:+79244447777" class="header__phone">
-            <img src="assets/images/call.svg" alt="звонок">
-            <span class="phone-number">+7 (924) 444-77-77</span>
-        </a>
-
-
-        <button class="header__menu-btn">
-            <img src="assets/images/menu.svg" alt="меню">
-        </button>
+    <header class="header" id="header-section">
     </header>
 
-    <section class="hero">
-        <h1 class="hero__title">Студия йоги и пилатеса</h1>
-        <div class="hero__image-wrapper">
-            <img src="assets/images/full-shot-woman-stretching-inside.png" alt="Женщина молодец"
-                class="hero__main-image">
-            <button class="hero__zap">
-                <span class="hero__zap-text">записаться</span>
-            </button>
-        </div>
-        <p class="hero__subtitle">Здесь мы поможем вам держать тело в тонусе, а душу - в гармонии.</p>
-
-        <div class="hero__flower">
-            <img src="assets/images/Flower.svg" alt="цветок для телефона" class="hero__flower-mobile">
-            <img src="assets/images/FlowerTablet.svg" alt="цветок для планшета" class="hero__flower-tablet">
-        </div>
-
-        <div class="hero__navigation">
-            <div class="navigation__counter">1/3</div>
-            <div class="navigation__progress">
-                <div class="navigation__progress-bar"></div>
-                <div class="navigation__progress-current"></div>
-            </div>
-            <div class="navigation__arrows">
-                <button class="arrow arrow--left">
-                    <img src="assets/images/left.png" alt="Предыдущий" class="arrow__icon">
-                </button>
-                <button class="arrow arrow--right">
-                    <img src="assets/images/right.png" alt="Следующий" class="arrow__icon">
-                </button>
-            </div>
-        </div>
-
-        <div class="hero__stats">
-            <div class="stats__image">
-                <img src="assets/images/full-shot-woman-meditating.jpg" alt="Женщина спокойная">
-            </div>
-            <div class="stats__list">
-                <div class="stat">
-                    <span class="stat__number">6</span>
-                    <span class="stat__text">направлений в одном абонементе</span>
-                </div>
-                <div class="stat">
-                    <span class="stat__number">4</span>
-                    <span class="stat__text">тренера с большим практическим опытом</span>
-                </div>
-                <div class="stat">
-                    <span class="stat__number">2</span>
-                    <span class="stat__text">просторных зала для занятий</span>
-                </div>
-            </div>
-        </div>
+    <section class="hero" id="hero-section">
     </section>
 
-    <section class="directions">
-        <div class="directions__header">
-            <h2 class="directions__title">Все направления в одном абонементе</h2>
-            <p class="directions__subtitle">Не определились с направлением? Мы подскажем!</p>
-        </div>
+    <section class="directions" id="directions-section">
+    </section>
 
-        <div class="directions__tags">
-            <div class="tags-container">
-                <button class="tag active">Пилатес</button>
-                <button class="tag">Кундалини-йога</button>
-                <button class="tag">Хатха-йога</button>
-                <button class="tag">Здоровая спина</button>
-                <button class="tag">Флоу-йога</button>
-                <button class="tag">Стретчинг</button>
-            </div>
-        </div>
-
-        <div class="direction__card">
-            <div class="direction__image">
-                <img src="assets/images/woman-digital-disconnecting-home-by-doing-yoga.jpg" alt="Женщина хвастается"
-                    class="direction__image__img">
-            </div>
-
-            <div class="direction__info">
-
-                <div class="direction__details">
-                    <div class="detail-item">
-                        <div class="detail-icon">
-                            <img src="assets/images/calendar.svg" alt="Календарь">
-                        </div>
-                        <span class="detail-text">Проходит по: пн, ср, пт</span>
-                    </div>
-
-                    <div class="detail-item">
-                        <div class="detail-icon">
-                            <img src="assets/images/timer.svg" alt="Таймер">
-                        </div>
-                        <span class="detail-text">Длительность: 60 мин</span>
-                    </div>
-                </div>
-
-                <h3 class="direction__name"></h3>
-                <p class="direction__description">
-            </div>
-
-            <div class="direction__navigation">
-                <div class="navigation__arrows">
-                    <button class="arrow arrow--left">
-                        <img src="assets/images/left.png" alt="Предыдущий" class="arrow__icon">
-                    </button>
-                    <button class="arrow arrow--right">
-                        <img src="assets/images/right.png" alt="Следующий" class="arrow__icon">
-                    </button>
-                </div>
-
-                <div class="nav__progress">
-                    <div class="progress-bar">
-                        <div class="progress-fill"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="price" id="price-section">
     </section>
 </body>
 

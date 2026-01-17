@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
 
-@font-face {
-    font-family: 'New-YorkerC';
-    src: url('../assets/fonts/New-YorkerC.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
 .hero {
     position: relative;
     max-width: 375px;
@@ -33,7 +25,6 @@
     font-size: 16px;
     line-height: 130%;
     color: var(--secondary);
-    text-align: center;
     font-variant-numeric: lining-nums proportional-nums;
     font-weight: 400;
     letter-spacing: 0;
@@ -92,7 +83,6 @@
 .hero__stats {
     display: flex;
     gap: 14px;
-    max-width: 327px;
     margin: 0 auto;
 }
 
@@ -153,15 +143,13 @@
         max-width: 767px;
         width: 100%;
         height: 572px;
-        margin: 0 auto;
-        padding: 0;
+        padding: 0 36px 0;
     }
 
     .hero__title {
         position: absolute;
         width: 397px;
         height: 107px;
-        left: 36px;
         top: 77px;
         font-size: 54px;
         text-align: left;
@@ -174,7 +162,6 @@
         position: absolute;
         width: 276px;
         height: 43px;
-        left: 37px;
         top: 216px;
         text-align: left;
         margin: 0;
@@ -225,7 +212,6 @@
         position: absolute;
         width: auto;
         height: 192px;
-        left: 36px;
         top: 363px;
         display: flex;
         flex-direction: row;
@@ -309,7 +295,7 @@
         height: 1px;
         background: #CBC9C1;
         opacity: 0.5;
-        width: 194.25px;
+        width: 194px;
     }
 
     .navigation__progress-current {

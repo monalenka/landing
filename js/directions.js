@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
             initDirections(directions);
         })
         .catch(error => {
-            console.error('Ошибка с загрузкой данных:', error);
+            console.error('Ошибка (направления):', error);
             const fallbackData = {
                 "directions": [
                     {
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     {
                         "id": 2,
                         "name": "Хатха-йога",
-                        "tagName": "Хатха",
+                        "tagName": "Хатха-йога",
                         "description": "Это классическое направление йоги, которое включает в себя асаны для укрепления мышц, дыхательные упражнения и медитацию. Регулярные занятия помогают подтянуть тело, улучшить гибкость, укрепить здоровье, придав телу силу и выносливость.",
                         "days": "пн, ср, пт",
                         "duration": "60 мин",
@@ -69,11 +69,74 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
     function initDirections(directions) {
-        const tagsContainer = document.querySelector('.tags-container');
-        const directionImage = document.querySelector('.direction__image__img');
-        const directionName = document.querySelector('.direction__name');
-        const detailTexts = document.querySelectorAll('.detail-text');
-        const directionDescription = document.querySelector('.direction__description');
+        const directionsSection = document.getElementById('directions-section');
+
+        if (!directionsSection) {
+            console.error('directions не найдены');
+            return;
+        }
+
+        directionsSection.innerHTML = `
+            <div class="directions__header">
+                <h2 class="directions__title">Все направления в одном абонементе</h2>
+                <p class="directions__subtitle">Не определились с направлением? Мы подскажем!</p>
+            </div>
+
+            <div class="directions__tags">
+                <div class="tags-container">
+                </div>
+            </div>
+
+            <div class="direction__card">
+                <div class="direction__image">
+                    <img src="" alt="" class="direction__image__img">
+                </div>
+
+                <div class="direction__info">
+                    <div class="direction__details">
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <img src="assets/images/calendar.svg" alt="Календарь">
+                            </div>
+                            <span class="detail-text"></span>
+                        </div>
+
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <img src="assets/images/timer.svg" alt="Таймер">
+                            </div>
+                            <span class="detail-text"></span>
+                        </div>
+                    </div>
+
+                    <h3 class="direction__name"></h3>
+                    <p class="direction__description"></p>
+                </div>
+
+                <div class="direction__navigation">
+                    <div class="navigation__arrows">
+                        <button class="arrow arrow--left">
+                            <img src="assets/images/left.png" alt="Предыдущий" class="arrow__icon">
+                        </button>
+                        <button class="arrow arrow--right">
+                            <img src="assets/images/right.png" alt="Следующий" class="arrow__icon">
+                        </button>
+                    </div>
+
+                    <div class="nav__progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        const tagsContainer = directionsSection.querySelector('.tags-container');
+        const directionImage = directionsSection.querySelector('.direction__image__img');
+        const directionName = directionsSection.querySelector('.direction__name');
+        const detailTexts = directionsSection.querySelectorAll('.detail-text');
+        const directionDescription = directionsSection.querySelector('.direction__description');
 
         tagsContainer.innerHTML = '';
 
@@ -127,12 +190,12 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        const leftArrow = document.querySelector('.arrow--left');
-        const rightArrow = document.querySelector('.arrow--right');
+        const leftArrow = directionsSection.querySelector('.arrow--left');
+        const rightArrow = directionsSection.querySelector('.arrow--right');
 
         if (leftArrow && rightArrow) {
             leftArrow.addEventListener('click', function () {
-                const currentActive = document.querySelector('.tag.active');
+                const currentActive = directionsSection.querySelector('.tag.active');
                 const prevTag = currentActive.previousElementSibling ||
                     tagsContainer.lastElementChild;
 
@@ -150,7 +213,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
             rightArrow.addEventListener('click', function () {
-                const currentActive = document.querySelector('.tag.active');
+                const currentActive = directionsSection.querySelector('.tag.active');
                 const nextTag = currentActive.nextElementSibling ||
                     tagsContainer.firstElementChild;
 
