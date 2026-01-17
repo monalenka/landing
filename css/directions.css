@@ -12,6 +12,7 @@
     line-height: 120%;
     letter-spacing: 0.007em;
     color: #618B5E;
+    font-weight: 400;
 }
 
 .directions__subtitle {
@@ -171,7 +172,7 @@
 @media (min-width: 768px) {
     .directions {
         max-width: 768px;
-        padding: 100px 36px 0;
+        padding: 100px 0 0;
     }
 
     .directions__header {
@@ -314,7 +315,6 @@
     .directions {
         max-width: 1600px;
         top: 120px;
-        width: 100%;
     }
 
     .directions__header {
