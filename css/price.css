@@ -239,6 +239,7 @@
         grid-row: 1;
         display: flex;
         flex-direction: column;
+        margin: 5% 0;
     }
 
     .price {
@@ -288,10 +289,6 @@
         grid-row: 2;
     }
 
-    .price__single .price__button {
-        display: none;
-    }
-
     .price__cards .price__button--tablet {
         display: flex;
         align-items: center;
@@ -322,11 +319,20 @@
         color: var(--primary);
     }
 
+    .price__single .price__button {
+        display: none;
+    }
+
+    .price__cards .price__button--signup {
+        display: none;
+    }
+
     .price__cards {
         grid-column: 1 / span 2;
         grid-row: 2 / span 2;
         display: grid;
         grid-template-columns: 338px 338px;
+        gap: 32px 56px;
     }
 
     .price-card[data-id="2"] {
@@ -352,16 +358,18 @@
 
 @media (min-width: 1600px) {
     .price {
-        max-width: 1600px;
+        max-width: 1200px;
         padding: 200px 200px 80px;
-        grid-template-columns: 400px 400px 400px;
+        grid-template-columns: 243px 346px 407px;
         grid-template-rows: auto auto;
-        gap: 72px 82px;
+        gap: 40px 82px;
+        margin: 0 auto;
     }
 
     .price__title {
-        width: 600px;
+        width: 692px;
         display: flex;
+        align-items: center;
         font-size: 48px;
         grid-column: 1;
         grid-row: 1;
@@ -370,12 +378,13 @@
     .price__description {
         grid-column: 3;
         grid-row: 1;
+        margin: 10% auto;
     }
 
     .price__cards {
         grid-column: 1 / span 3;
         grid-row: 2;
-        grid-template-columns: 400px 400px 400px;
+        grid-template-columns: 243px 346px 407px;
         grid-template-rows: auto auto;
         gap: 48px 82px;
     }
@@ -415,7 +424,28 @@
         z-index: 1;
     }
 
-    .price__single .price__button--mobile {
+    .price__cards .price__button--review {
         display: none;
+    }
+
+    .price__cards .price__button--signup {
+        display: flex;
+        justify-content: center;
+        background: var(--primary);
+        grid-row: 2;
+    }
+
+    .price__cards .price__button--signup:hover {
+        opacity: 0.9;
+        background: var(--primary);
+    }
+
+    .price__cards .price__button--signup .price__button-text {
+        font-family: var(--f-R);
+        font-size: 15px;
+        line-height: 15px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--bg);
     }
 }

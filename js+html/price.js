@@ -55,8 +55,11 @@ document.addEventListener('DOMContentLoaded', function () {
     function initPrices(priceData) {
         const priceSection = document.getElementById('price-section');
         const tabletButton = `
-        <button class="price__button price__button--tablet">
+        <button class="price__button price__button--tablet price__button--review">
             <span class="price__button-text">Оставить отзыв</span>
+        </button>
+        <button class="price__button price__button--tablet price__button--signup">
+            <span class="price__button-text">записаться</span>
         </button>
     `;
 
@@ -81,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <span class="single-session__text">${priceData.singleSession.description}</span>
             </div>
         </div>
-        <button class="price__button price__button--mobile">
+        <button class="price__button price__button--mob-desk">
             <span class="price__button-text">записаться</span>
         </button>
     </div>
