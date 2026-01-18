@@ -1,0 +1,291 @@
+.timetable {
+    position: relative;
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 44px 0 0;
+}
+
+.timetable__title {
+    width: 326px;
+    font-family: var(--f-N);
+    font-size: 26px;
+    line-height: 120%;
+    letter-spacing: 0.007em;
+    color: var(--primary);
+    margin-bottom: 24px;
+    font-weight: 400;
+}
+
+.timetable__description {
+    font-family: var(--f-R);
+    font-size: 13px;
+    line-height: 135%;
+    color: var(--secondary);
+    margin-bottom: 40px;
+}
+
+.timetable__days {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    border-bottom: 1px solid #CBC8C1;
+    margin-bottom: 55px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.timetable__day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    min-width: 57px;
+    opacity: 0.5;
+    flex-shrink: 0;
+}
+
+.timetable__day--active {
+    opacity: 1;
+}
+
+.timetable__day-name {
+    font-family: var(--f-R);
+    font-size: 14px;
+    line-height: 125%;
+    color: var(--secondary);
+}
+
+.timetable__day--active .timetable__day-name {
+    color: var(--primary);
+}
+
+.timetable__day-line {
+    width: 100%;
+    height: 2px;
+    background: var(--primary);
+    display: none;
+}
+
+.timetable__day--active .timetable__day-line {
+    display: block;
+}
+
+.timetable__table {
+    margin-bottom: 40px;
+}
+
+.timetable__header {
+    display: grid;
+    grid-template-columns: 1fr 63px 1fr 50px;
+    padding-bottom: 7px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #CBC8C1;
+}
+
+.timetable__header-item:nth-child(1) {
+    grid-column: 1;
+}
+
+.timetable__header-item:nth-child(2) {
+    grid-column: 2;
+    text-align: center;
+}
+
+.timetable__header-item:nth-child(3) {
+    grid-column: 3;
+    text-align: center;
+}
+
+.timetable__row {
+    display: grid;
+    grid-template-columns: 1fr 63px 1fr 50px;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #CBC8C1;
+}
+
+.timetable__class-info {
+    grid-column: 1;
+}
+
+.timetable__time {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timetable__duration {
+    grid-column: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--f-R);
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 0;
+    font-variant-numeric: lining-nums proportional-nums;
+    color: var(--secondary);
+}
+
+.timetable__actions {
+    grid-column: 4;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.timetable__action-btn {
+    width: 16px;
+    height: 16px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    cursor: pointer;
+}
+
+.timetable__header-item {
+    font-family: var(--f-R);
+    font-size: 12px;
+    color: var(--secondary);
+    opacity: 0.6;
+}
+
+.timetable__class-name {
+    font-family: var(--f-R);
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--secondary);
+}
+
+.timetable__teacher {
+    font-family: var(--f-R);
+    font-size: 11px;
+    line-height: 13px;
+    color: #98958B;
+}
+
+.timetable__start-time {
+    font-family: var(--f-R);
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--secondary);
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+strong {
+    font-weight: 400;
+}
+
+.timetable__teacher-column {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .timetable {
+        max-width: 768px;
+        display: grid;
+        grid-template-columns: 336px 338px;
+        gap: 56px 56px;
+        padding: 0 0;
+    }
+
+    .timetable__title {
+        font-size: 30px;
+        margin: 0 0 0;
+    }
+
+    .timetable__description {
+        grid-column: 2;
+        width: 337px;
+        margin-bottom: 0;
+        line-height: 125%;
+    }
+
+    .timetable__description strong {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 125%;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        font-variant-numeric: lining-nums proportional-nums;
+        color: var(--primary);
+    }
+
+    .timetable__days {
+        grid-column: 1 / span 2;
+        border-bottom: none;
+        margin-bottom: 0;
+        overflow-x: visible;
+    }
+
+    .timetable__day {
+        gap: 20px;
+    }
+
+    .timetable__table {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+        width: 696px;
+        margin: -20px 0 40px;
+    }
+
+    .timetable__header {
+        display: none;
+    }
+
+    .timetable__row {
+        grid-template-columns: 2fr 1fr 1fr 1fr 0.5fr;
+        gap: 21px;
+        padding: 23px 0;
+    }
+
+    .timetable__class-info {
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .timetable__time {
+        grid-column: 2;
+    }
+
+    .timetable__duration {
+        grid-column: 3;
+        font-family: var(--f-R);
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--secondary);
+        font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+
+    .timetable__teacher-column {
+        grid-column: 4;
+        font-family: var(--f-R);
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--secondary);
+        font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+
+    .timetable__actions {
+        grid-column: 5;
+        gap: 20px;
+    }
+
+    .timetable__action-btn {
+        width: 18px;
+        height: 18px;
+    }
+
+    .timetable__class-info .timetable__teacher {
+        display: none;
+    }
+}
