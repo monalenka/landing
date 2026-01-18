@@ -358,7 +358,7 @@
 @media (min-width: 1600px) {
     .price {
         max-width: 1200px;
-        padding: 200px 200px 80px;
+        padding: 200px 200px 120px;
         grid-template-columns: 243px 346px 407px;
         grid-template-rows: auto auto;
         gap: 40px 82px;

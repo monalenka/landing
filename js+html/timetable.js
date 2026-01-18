@@ -251,6 +251,7 @@ function initTimetable(timetableData) {
     <div class="timetable">
         <h2 class="timetable__title">${timetableData.title}</h2>
         <p class="timetable__description">${description}</p>
+        <img src="assets/images/side-view-woman-rolling-yoga-mat.png" alt="Йога" class="timetable__image">
         
         <div class="timetable__days">
             ${createDay(timetableData.days)}

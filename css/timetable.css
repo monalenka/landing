@@ -185,6 +185,10 @@ strong {
     display: none;
 }
 
+.timetable__image {
+    display: none;
+}
+
 @media (min-width: 768px) {
     .timetable {
         max-width: 768px;
@@ -287,5 +291,47 @@ strong {
 
     .timetable__class-info .timetable__teacher {
         display: none;
+    }
+}
+
+@media (min-width: 1600px) {
+    .timetable {
+        max-width: 1182px;
+        grid-template-columns: 243px 346px 407px;
+        grid-template-rows: auto auto auto;
+        gap: 40px 82px;
+        margin: 0 auto;
+    }
+
+    .timetable__title {
+        width: 670px;
+        font-size: 48px;
+    }
+
+    .timetable__description {
+        grid-column: 3;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .timetable__table {
+        width: 100%;
+        margin: 0;
+    }
+
+    .timetable__teacher-column {
+        display: flex;
+    }
+
+    .timetable__description strong {
+        color: var(--secondary);
+        font-weight: 600;
+    }
+
+    .timetable__image {
+        grid-row: 2 / span 2;
+        width: 100%;
+        display: block;
+        align-self: end
     }
 }
