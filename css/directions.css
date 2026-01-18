@@ -137,38 +137,6 @@
     width: 327px;
 }
 
-.nav__progress {
-    flex: 1;
-    position: relative;
-    height: 1px;
-}
-
-.progress-bar {
-    width: 243px;
-    height: 1px;
-    background: #98958B;
-    opacity: 0.5;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.progress-fill {
-    width: 85%;
-    height: 1px;
-    background: var(--primary);
-    border-radius: 6px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.navigation__arrows {
-    display: flex;
-    gap: 8px;
-    width: 76px;
-}
-
 @media (min-width: 768px) {
     .directions {
         max-width: 768px;
@@ -416,19 +384,5 @@
         width: 407px;
         margin: 0;
         font-size: 16px;
-    }
-
-    .nav__progress {
-        width: 323px;
-        height: 1px;
-        margin: 0;
-    }
-
-    .progress-bar {
-        width: 100%;
-    }
-
-    .progress-fill {
-        width: 220px;
     }
 }

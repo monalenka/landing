@@ -1,0 +1,238 @@
+.experts {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 5px 0 0;
+    position: relative;
+}
+
+.experts__title {
+    font-family: var(--f-N);
+    font-size: 26px;
+    line-height: 120%;
+    letter-spacing: 0.007em;
+    color: var(--primary);
+    font-weight: 400;
+    width: 327px;
+}
+
+.experts__description {
+    font-family: var(--f-R);
+    font-size: 13px;
+    line-height: 135%;
+    color: var(--secondary);
+    width: 327px;
+}
+
+.experts__carousel {
+    position: relative;
+    margin: 56px 0 0;
+}
+
+.carousel-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 16px;
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.expert__card {
+    flex: 0 0 auto;
+    width: 154px;
+}
+
+.expert__image {
+    width: 154px;
+    height: 197px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.expert__image__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.expert__name {
+    font-family: var(--f-R);
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 400;
+    color: var(--secondary);
+    margin: 0;
+}
+
+.experts__navigation {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.experts__progress-bar {
+    width: 243px;
+    height: 1px;
+    background: #98958B;
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+    .experts {
+        max-width: 768px;
+        display: grid;
+        grid-template-columns: 336px 338px;
+        gap: 0 21px;
+        padding: 0 0;
+        margin: 0 auto 0;
+    }
+
+    .experts__title {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .experts__description {
+        line-height: 125%;
+        margin: 0 0 56px;
+    }
+
+    .experts__carousel {
+        width: 768px;
+        grid-column: 1 / 3;
+        grid-row: 2;
+        margin: 0;
+    }
+
+
+    .expert__card {
+        display: grid;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 696px;
+        height: 379px;
+    }
+
+    .expert__card.active {
+        opacity: 1;
+        visibility: visible;
+        position: relative;
+    }
+
+    .expert__image {
+        width: 338px;
+        height: 379px;
+        border-radius: 189.5px 0 0 0;
+        margin-bottom: 0;
+    }
+
+    .expert__image__img {
+        border-radius: 189.5px 0 0 0;
+    }
+
+    .expert__info {
+        grid-column: 2;
+        grid-row: 1;
+        width: 338px;
+        border: 1px solid #98958B;
+        padding: 49px 24px;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .expert__name {
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 24px;
+    }
+
+    .expert__bio {
+        font-family: var(--f-R);
+        font-size: 14px;
+        line-height: 125%;
+        color: var(--secondary);
+        margin: 0;
+    }
+
+    .experts__navigation {
+        grid-column: 1 / 3;
+        grid-row: 3;
+        width: 696px;
+    }
+
+    .experts__progress-bar {
+        width: 610px;
+    }
+
+    .carousel-container {
+        position: relative;
+        width: 696px;
+        height: 379px;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1600px) {
+    .experts {
+        max-width: 1182px;
+        grid-template-columns: 243px 346px 407px;
+        gap: 40px 82px;
+    }
+
+    .experts__title {
+        width: 670px;
+        font-size: 48px;
+    }
+
+    .experts__description {
+        width: 407px;
+        grid-column: 3;
+        font-size: 14px;
+    }
+
+    .expert__info {
+        border-color: #CBC9C1;
+    }
+
+    .experts__carousel--mobile {
+        grid-column: 3;
+        width: 407px;
+        overflow: hidden;
+    }
+
+    .expert__image--mobile {
+        height: 197px;
+    }
+
+    .expert__image__img--mobile {
+        height: 100%;
+    }
+
+    .expert__name--mobile {
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--secondary);
+    }
+
+    .expert__bio--mobile {
+        display: none;
+    }
+
+    .expert__card {
+        opacity: 1;
+        visibility: visible;
+    }
+}

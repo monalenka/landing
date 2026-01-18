@@ -194,7 +194,7 @@ strong {
         max-width: 768px;
         display: grid;
         grid-template-columns: 336px 338px;
-        gap: 56px 56px;
+        gap: 56px 21px;
         padding: 0 0;
     }
 
