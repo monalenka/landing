@@ -29,14 +29,6 @@
     margin: 56px 0 0;
 }
 
-.carousel-container {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    padding-bottom: 16px;
-}
-
 .carousel-container::-webkit-scrollbar {
     display: none;
 }
