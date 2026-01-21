@@ -121,6 +121,7 @@
         opacity: 1;
         visibility: visible;
         position: relative;
+        gap: 20px;
     }
 
     .expert__image {
