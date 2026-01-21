@@ -52,7 +52,6 @@
 .timetable__day-name {
     font-family: var(--f-R);
     font-size: 14px;
-    line-height: 125%;
     color: var(--secondary);
 }
 
@@ -245,7 +244,7 @@ strong {
     }
 
     .timetable__row {
-        grid-template-columns: 2fr 1fr 1fr 1fr 0.5fr;
+        grid-template-columns: 1fr 0.5fr 1fr 1fr 0.5fr 0.2fr;
         gap: 21px;
         padding: 23px 0;
     }
@@ -333,5 +332,29 @@ strong {
         width: 100%;
         display: block;
         align-self: end
+    }
+
+    .timetable__day {
+        gap: 5px;
+    }
+
+    .timetable__day:not(.timetable__day--active) {
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .timetable__day:not(.timetable__day--active):hover {
+        transform: translateY(-3px);
+    }
+
+    .timetable__day:not(.timetable__day--active):hover .timetable__day-line {
+        display: block;
+        opacity: 0.8;
+        bottom: -2px;
+        height: 2px;
+    }
+
+    .timetable__day-line {
+        transition: opacity 0.3s ease;
     }
 }

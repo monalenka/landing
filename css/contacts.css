@@ -92,7 +92,9 @@
 }
 
 .contacts__submit:hover {
-    opacity: 0.9;
+    color: var(--primary);
+    background-color: transparent;
+    border: 1px solid var(--primary);
 }
 
 .contacts__social {
@@ -240,11 +242,6 @@
         font-weight: 500;
     }
 
-    .contacts__submit:hover {
-        background: #789776;
-        color: #FEFBF7;
-    }
-
     .contacts__social {
         grid-column: 5;
         gap: 10px;
@@ -363,10 +360,6 @@
         border: none;
         color: #FEFBF7;
         justify-self: end;
-    }
-
-    .contacts__submit:hover {
-        opacity: 0.9;
     }
 
     .contacts__social {

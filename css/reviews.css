@@ -71,8 +71,9 @@
 }
 
 .reviews__button:hover {
-    opacity: 0.9;
-    transform: translateY(-2px);
+    color: var(--primary);
+    background-color: transparent;
+    border: 1px solid var(--primary);
 }
 
 .review-card {
@@ -356,6 +357,7 @@
 
     .reviews__carousel-container {
         margin-left: 200px;
+        height: 518px;
     }
 
     .reviews__title {
@@ -417,5 +419,6 @@
 
     .reviews__navigation {
         margin: 32px 200px 0;
+        position: absolute;
     }
 }

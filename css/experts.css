@@ -82,6 +82,7 @@
         max-width: 768px;
         display: grid;
         grid-template-columns: 336px 338px;
+        grid-template-rows: auto auto auto;
         gap: 0 21px;
         padding: 0 0;
         margin: 0 auto 0;
@@ -182,7 +183,9 @@
     .experts {
         max-width: 1182px;
         grid-template-columns: 243px 346px 407px;
+        grid-template-rows: auto 300px 34px;
         gap: 40px 82px;
+        align-items: start;
     }
 
     .experts__title {
@@ -202,8 +205,12 @@
 
     .experts__carousel--mobile {
         grid-column: 3;
+        grid-row: 2;
         width: 407px;
         overflow: hidden;
+        align-self: start;
+        height: 300px;
+        margin-top: -65px;
     }
 
     .expert__image--mobile {
@@ -227,5 +234,21 @@
     .expert__card {
         opacity: 1;
         visibility: visible;
+    }
+
+    .experts__navigation {
+        width: 400px;
+        grid-column: 3;
+        grid-row: 3;
+    }
+
+    .experts__progress-bar {
+        width: 320px;
+        position: relative;
+    }
+
+    .nav__progress {
+        position: relative;
+        left: 0;
     }
 }

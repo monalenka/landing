@@ -98,6 +98,7 @@
     color: #5B6158;
     text-align: left;
     flex-grow: 1;
+    transition: all 0.3s ease;
 }
 
 .faq__answer {
@@ -128,7 +129,10 @@
 }
 
 .faq__item.active .faq__question-text {
+    font-family: var(--f-R);
     font-weight: 600;
+    line-height: 130%;
+    transition: all 0.3s ease 0.1s;
 }
 
 .faq__item.active .faq__answer {

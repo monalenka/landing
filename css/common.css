@@ -67,7 +67,7 @@ body {
 
 .progress-fill {
     width: 85%;
-    height: 1px;
+    height: 2px;
     background: var(--primary);
     border-radius: 6px;
     position: absolute;

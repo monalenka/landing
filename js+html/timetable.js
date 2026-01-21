@@ -198,12 +198,60 @@ document.addEventListener('DOMContentLoaded', function () {
                 "active": false,
                 "classes": [
                     {
-                        "id": 22,
+                        "id": 15,
+                        "name": "Хатха-йога",
+                        "teacher": "Ирина Беляева",
+                        "startTime": "8:00",
+                        "duration": "1:30",
+                        "durationMinutes": "90 мин"
+                    },
+                    {
+                        "id": 16,
+                        "name": "Здоровая спина",
+                        "teacher": "Ирина Беляева",
+                        "startTime": "10:00",
+                        "duration": "1:00",
+                        "durationMinutes": "60 мин"
+                    },
+                    {
+                        "id": 17,
                         "name": "Пилатес",
                         "teacher": "Анна Беляева",
-                        "startTime": "10:00",
+                        "startTime": "12:00",
+                        "duration": "1:30",
+                        "durationMinutes": "90 мин"
+                    },
+                    {
+                        "id": 18,
+                        "name": "Флоу-йога",
+                        "teacher": "Ирина Беляева",
+                        "startTime": "14:00",
+                        "duration": "2:00",
+                        "durationMinutes": "120 мин"
+                    },
+                    {
+                        "id": 19,
+                        "name": "Стретчинг",
+                        "teacher": "Анна Беляева",
+                        "startTime": "16:00",
                         "duration": "1:20",
                         "durationMinutes": "80 мин"
+                    },
+                    {
+                        "id": 20,
+                        "name": "Пилатес",
+                        "teacher": "Анна Беляева",
+                        "startTime": "18:00",
+                        "duration": "1:20",
+                        "durationMinutes": "80 мин"
+                    },
+                    {
+                        "id": 21,
+                        "name": "Кундалини-йога",
+                        "teacher": "Ирина Беляева",
+                        "startTime": "20:00",
+                        "duration": "2:00",
+                        "durationMinutes": "120 мин"
                     }
                 ]
             },
@@ -213,12 +261,60 @@ document.addEventListener('DOMContentLoaded', function () {
                 "active": false,
                 "classes": [
                     {
-                        "id": 23,
-                        "name": "Флоу-йога",
+                        "id": 8,
+                        "name": "Здоровая спина",
+                        "teacher": "Екатерина Волкова",
+                        "startTime": "8:00",
+                        "duration": "1:00",
+                        "durationMinutes": "60 мин"
+                    },
+                    {
+                        "id": 9,
+                        "name": "Хатха-йога",
                         "teacher": "Ирина Беляева",
-                        "startTime": "9:00",
+                        "startTime": "10:00",
                         "duration": "1:30",
                         "durationMinutes": "90 мин"
+                    },
+                    {
+                        "id": 10,
+                        "name": "Пилатес",
+                        "teacher": "Екатерина Волкова",
+                        "startTime": "12:00",
+                        "duration": "1:30",
+                        "durationMinutes": "90 мин"
+                    },
+                    {
+                        "id": 11,
+                        "name": "Кундалини-йога",
+                        "teacher": "Ирина Беляева",
+                        "startTime": "14:00",
+                        "duration": "1:40",
+                        "durationMinutes": "120 мин"
+                    },
+                    {
+                        "id": 12,
+                        "name": "Стретчинг",
+                        "teacher": "Анна Беляева",
+                        "startTime": "16:00",
+                        "duration": "1:20",
+                        "durationMinutes": "80 мин"
+                    },
+                    {
+                        "id": 13,
+                        "name": "Пилатес",
+                        "teacher": "Анна Беляева",
+                        "startTime": "18:00",
+                        "duration": "1:20",
+                        "durationMinutes": "80 мин"
+                    },
+                    {
+                        "id": 14,
+                        "name": "Кундалини-йога",
+                        "teacher": "Мария Смирнова",
+                        "startTime": "20:00",
+                        "duration": "1:20",
+                        "durationMinutes": "80 мин"
                     }
                 ]
             },
@@ -228,12 +324,60 @@ document.addEventListener('DOMContentLoaded', function () {
                 "active": false,
                 "classes": [
                     {
-                        "id": 24,
-                        "name": "я устала",
+                        "id": 8,
+                        "name": "Здоровая спина",
+                        "teacher": "Екатерина Волкова",
+                        "startTime": "8:00",
+                        "duration": "1:00",
+                        "durationMinutes": "60 мин"
+                    },
+                    {
+                        "id": 9,
+                        "name": "Хатха-йога",
                         "teacher": "Ирина Беляева",
                         "startTime": "10:00",
-                        "duration": "2:00",
+                        "duration": "1:30",
+                        "durationMinutes": "90 мин"
+                    },
+                    {
+                        "id": 10,
+                        "name": "Пилатес",
+                        "teacher": "Екатерина Волкова",
+                        "startTime": "12:00",
+                        "duration": "1:30",
+                        "durationMinutes": "90 мин"
+                    },
+                    {
+                        "id": 11,
+                        "name": "Кундалини-йога",
+                        "teacher": "Ирина Беляева",
+                        "startTime": "14:00",
+                        "duration": "1:40",
                         "durationMinutes": "120 мин"
+                    },
+                    {
+                        "id": 12,
+                        "name": "Стретчинг",
+                        "teacher": "Анна Беляева",
+                        "startTime": "16:00",
+                        "duration": "1:20",
+                        "durationMinutes": "80 мин"
+                    },
+                    {
+                        "id": 13,
+                        "name": "Пилатес",
+                        "teacher": "Анна Беляева",
+                        "startTime": "18:00",
+                        "duration": "1:20",
+                        "durationMinutes": "80 мин"
+                    },
+                    {
+                        "id": 14,
+                        "name": "Кундалини-йога",
+                        "teacher": "Мария Смирнова",
+                        "startTime": "20:00",
+                        "duration": "1:20",
+                        "durationMinutes": "80 мин"
                     }
                 ]
             }

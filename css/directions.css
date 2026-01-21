@@ -77,6 +77,35 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: opacity 0.3s ease;
+}
+
+.direction__image__img.fade-out {
+    animation: fadeOut 0.3s linear forwards;
+}
+
+.direction__image__img.fade-in {
+    animation: fadeIn 0.3s linear forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .direction__info {

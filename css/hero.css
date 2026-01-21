@@ -41,6 +41,37 @@
     object-fit: cover;
     object-position: center;
     border-radius: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero__main-image.fade-out {
+    animation: fadeOut 0.3s linear forwards;
+}
+
+.hero__main-image.fade-in {
+    animation: fadeIn 0.3s linear forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .hero__zap {
@@ -57,11 +88,11 @@
     letter-spacing: 0.07em;
     text-transform: uppercase;
     color: var(--bg);
-    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 500;
+    z-index: 2;
 }
 
 .hero__flower {
@@ -69,7 +100,7 @@
     left: 260px;
     top: 630px;
     pointer-events: none;
-    z-index: 1;
+    z-index: -1;
 }
 
 .hero__flower-tablet {
@@ -294,7 +325,7 @@
         left: 0;
         top: 0;
         width: 63.26px;
-        height: 1px;
+        height: 2px;
         background: var(--primary);
     }
 
@@ -319,6 +350,7 @@
     }
 
     .hero__stats {
+        top: 560px;
         left: 200px;
     }
 
@@ -327,6 +359,7 @@
         height: 604px;
         right: 200px;
         left: auto;
+        z-index: 0;
     }
 
     .hero__flower {
@@ -335,8 +368,70 @@
     }
 
     .hero__navigation {
+        width: 488px;
         right: 200px;
-        top: calc(103px + 604px + 32px);
+        top: 720px;
         left: auto;
+        z-index: 2;
+    }
+
+    .stats__image {
+        width: 183px;
+        height: 250px
+    }
+
+    .stats__list {
+        gap: 24px;
+    }
+
+    .stat__number {
+        font-size: 36px;
+    }
+
+    .stat__text {
+        font-size: 14px;
+    }
+
+    .hero__zap-container {
+        position: absolute;
+        left: -300px;
+        top: 280px;
+        width: 155px;
+        height: 155px;
+    }
+
+    .hero__zap {
+        z-index: 2;
+        width: 155px;
+        height: 155px;
+        left: 0;
+        top: 0;
+        font-size: 15px;
+    }
+
+    .hero__zap-flower {
+        position: absolute;
+        width: 111px;
+        height: 111px;
+        opacity: 0;
+        z-index: 1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: all 1s ease;
+        pointer-events: none;
+    }
+
+    .hero__zap-container:hover .hero__zap-flower {
+        width: 350px;
+        height: 290px;
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@media (max-width: 1599px) {
+    .hero__zap-flower {
+        display: none;
     }
 }

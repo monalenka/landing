@@ -100,7 +100,8 @@
 }
 
 .price__button:hover {
-    opacity: 0.9;
+    background-color: transparent;
+    border: 1px solid var(--primary);
 }
 
 .price__button-text {
@@ -110,6 +111,10 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: var(--bg);
+}
+
+.price__button:hover .price__button-text {
+    color: var(--primary);
 }
 
 .price__cards {
@@ -433,11 +438,12 @@
         justify-content: center;
         background: var(--primary);
         grid-row: 2;
+        transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     .price__cards .price__button--signup:hover {
-        opacity: 0.9;
-        background: var(--primary);
+        background-color: transparent;
+        border: 1px solid var(--primary);
     }
 
     .price__cards .price__button--signup .price__button-text {
@@ -447,6 +453,10 @@
         letter-spacing: 0.05em;
         text-transform: uppercase;
         color: var(--bg);
+    }
+
+    .price__cards .price__button--signup:hover .price__button-text {
+        color: var(--primary);
     }
 
     .common__flower {
