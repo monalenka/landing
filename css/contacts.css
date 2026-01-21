@@ -1,0 +1,376 @@
+.contacts {
+    max-width: 374px;
+    margin: 88px auto;
+}
+
+.contacts__title {
+    font-family: var(--f-N);
+    font-size: 26px;
+    line-height: 120%;
+    font-weight: 400;
+    letter-spacing: 0.007em;
+    color: #789776;
+    margin: 0;
+}
+
+.contacts__subtitle {
+    font-family: var(--f-R);
+    font-size: 15px;
+    line-height: 130%;
+    color: #5B6158;
+    margin: 54px 0 24px 0;
+}
+
+.contacts__form {
+    width: 327px;
+}
+
+.contacts__form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 46px;
+}
+
+.contacts__form-group {
+    position: relative;
+}
+
+.contacts__label {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    color: #5B6158;
+}
+
+.contacts__input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #98958B;
+    background: transparent;
+    pointer-events: none;
+}
+
+.contacts__checkbox {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 24px 0 24px;
+}
+
+.contacts__checkbox-input {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #98958B;
+    border-radius: 2px;
+    appearance: none;
+    cursor: pointer;
+    margin: 0;
+}
+
+.contacts__checkbox-input:checked {
+    background-color: #789776;
+    border-color: #789776;
+}
+
+.contacts__checkbox-label {
+    font-size: 12px;
+    color: #5B6158;
+    width: 200px;
+}
+
+.contacts__submit {
+    width: 154px;
+    height: 43px;
+    background: #789776;
+    border: none;
+    border-radius: 40px;
+    font-family: var(--f-R);
+    letter-spacing: 0.08em;
+    color: #FEFBF7;
+    cursor: default;
+    transition: all 0.3s ease;
+}
+
+.contacts__submit:hover {
+    opacity: 0.9;
+}
+
+.contacts__social {
+    display: flex;
+    gap: 16px;
+}
+
+.contacts__social-link {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #789776;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.contacts__social-link:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.contacts__social-icon {
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease;
+}
+
+.contacts__map {
+    width: 327px;
+    height: 333px;
+}
+
+.contacts__map-placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contacts__info {
+    width: 327px;
+    height: 177px;
+    background: #789776;
+    overflow: hidden;
+}
+
+.contacts__info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 40px 35px;
+}
+
+.contacts__info-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contacts__info-icon {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+}
+
+.contacts__info-text {
+    font-family: var(--f-R);
+    font-size: 14px;
+    line-height: 125%;
+    color: #FEFBF7;
+    text-decoration: none;
+    font-variant-numeric: lining-nums proportional-nums;
+}
+
+.contacts__info-text:hover {
+    text-decoration: underline;
+}
+
+
+@media (min-width: 768px) {
+    .contacts {
+        max-width: 768px;
+        margin: 0 auto;
+        position: relative;
+        padding: 100px 0;
+    }
+
+    .contacts__title {
+        font-size: 32px;
+        margin-bottom: 54px;
+    }
+
+    .contacts__subtitle {
+        display: none;
+    }
+
+    .contacts__form {
+        width: 696px;
+        display: grid;
+        gap: 46px 0;
+        grid-template-columns: 183px 70px 228px 30px 184px;
+        grid-template-rows: auto auto;
+    }
+
+    .contacts__form-group:nth-child(1) {
+        grid-column: 1;
+    }
+
+    .contacts__form-group:nth-child(2) {
+        grid-column: 3;
+    }
+
+    .contacts__form-row {
+        display: contents;
+    }
+
+    .contacts__form-group {
+        position: relative;
+    }
+
+    .contacts__checkbox {
+        grid-column: 5;
+        margin: 0 auto 0;
+    }
+
+    .contacts__checkbox-label {
+        font-size: 10px;
+        width: 146px;
+    }
+
+    .contacts__form-group--full {
+        display: none;
+    }
+
+    .contacts__label {
+        opacity: 0.2;
+        transition: opacity 0.3s ease;
+    }
+
+    .contacts__submit {
+        grid-column: 1;
+        grid-row: 2;
+        width: 240px;
+        height: 55px;
+        border: 1.32px solid #789776;
+        background: transparent;
+        color: #789776;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .contacts__submit:hover {
+        background: #789776;
+        color: #FEFBF7;
+    }
+
+    .contacts__social {
+        grid-column: 5;
+        gap: 10px;
+        align-items: end;
+        justify-self: end;
+    }
+
+    .contacts__map {
+        width: 695px;
+        height: 474px;
+        margin: 40px 0 0 0;
+    }
+
+    .contacts__info {
+        position: absolute;
+        width: 338px;
+        height: 273px;
+        top: 50%;
+    }
+
+    .contacts__info-content {
+        gap: 16px;
+    }
+
+    .contacts__info-item:nth-child(1) {
+        order: 2;
+    }
+
+    .contacts__info-item:nth-child(2) {
+        order: 1;
+    }
+
+    .contacts__info-item:nth-child(3) {
+        order: 3;
+    }
+
+    .contacts__info-icon {
+        width: auto;
+        height: auto;
+    }
+
+    .contacts__social-2 {
+        position: absolute;
+        bottom: 34px;
+        display: flex;
+        gap: 11px;
+    }
+
+    .contacts__social-link-2 {
+        width: 40px;
+        height: 40px;
+        border: 1.4px solid #FEFBF7;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+}
+
+@media (min-width: 1600px) {
+    .contacts {
+        max-width: 1200px;
+        padding: 120px 200px;
+    }
+
+    .contacts__title {
+        font-size: 48px;
+        margin-bottom: 62px;
+    }
+
+    .contacts__form {
+        width: 1200px;
+        grid-template-columns: 300px 40px 300px 53px 507px;
+        align-items: end;
+    }
+
+    .contacts__checkbox {
+        grid-row: 1;
+        height: 25px;
+        margin: 0;
+        gap: 8px;
+    }
+
+    .contacts__label {
+        opacity: 1;
+    }
+
+    .contacts__input {
+        margin: 10px 0 0 0;
+    }
+
+    .contacts__submit {
+        grid-column: 5;
+        grid-row: 1;
+        width: 285px;
+        background: #789776;
+        border: none;
+        color: #FEFBF7;
+        justify-self: end;
+    }
+
+    .contacts__submit:hover {
+        opacity: 0.9;
+    }
+
+    .contacts__social {
+        display: none;
+    }
+
+    .contacts__map {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .contacts__info {
+        z-index: 2;
+        top: 45%;
+        left: 18%;
+    }
+
+    .contacts__info-content {
+        gap: 23px;
+    }
+}

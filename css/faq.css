@@ -165,7 +165,6 @@
         grid-column: 2;
         grid-row: 2;
         width: 338px;
-        height: 467.69px;
         margin: 0;
     }
 
@@ -206,7 +205,7 @@
 
     .faq__content {
         width: 712px;
-        margin: 30px 0 40px;
+        margin: 30px 0 0;
     }
 
     .faq__image-container {
