@@ -209,10 +209,6 @@
         display: contents;
     }
 
-    .contacts__form-group {
-        position: relative;
-    }
-
     .contacts__checkbox {
         grid-column: 5;
         margin: 0 auto 0;
