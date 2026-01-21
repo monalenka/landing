@@ -386,6 +386,7 @@
         grid-template-columns: 243px 346px 407px;
         grid-template-rows: auto auto;
         gap: 48px 82px;
+        position: relative;
     }
 
     .price__single {
@@ -446,5 +447,18 @@
         letter-spacing: 0.05em;
         text-transform: uppercase;
         color: var(--bg);
+    }
+
+    .common__flower {
+        position: absolute;
+        top: 80px;
+        left: 900px;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 1599px) {
+    .common__flower {
+        display: none;
     }
 }

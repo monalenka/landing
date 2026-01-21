@@ -4,6 +4,10 @@
     padding: 100px 0;
 }
 
+.reviews__carousel-wrapper {
+    overflow: hidden;
+}
+
 .reviews__header {
     margin-bottom: 36px;
 }

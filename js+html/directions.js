@@ -87,6 +87,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
             </div>
 
+            <div class="direction__flower">
+                <img src="assets/images/flowers/directions-Flower.svg">
+            </div>
+
             <div class="direction__card">
                 <div class="direction__image">
                     <img src="" alt="" class="direction__image__img">

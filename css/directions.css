@@ -117,6 +117,7 @@
     font-size: 13px;
     line-height: 135%;
     color: #3F423D;
+    font-variant-numeric: lining-nums proportional-nums;
 }
 
 .direction__description {
@@ -256,8 +257,8 @@
         position: absolute;
         width: 338px;
         height: 34px;
-        left: 350px;
-        top: 420px;
+        left: 390px;
+        top: 465px;
     }
 
     .nav__progress {
@@ -384,5 +385,19 @@
         width: 407px;
         margin: 0;
         font-size: 16px;
+    }
+
+    .direction__flower {
+        position: absolute;
+        left: 200px;
+        top: 500px;
+        pointer-events: none;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 1599px) {
+    .direction__flower {
+        display: none;
     }
 }

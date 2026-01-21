@@ -137,6 +137,16 @@
     margin-top: 16px;
 }
 
+.faq__flower {
+    position: absolute;
+    width: 227px;
+    height: 227px;
+    right: -15px;
+    bottom: 220px;
+    pointer-events: none;
+    z-index: 1;
+}
+
 @media (min-width: 768px) {
     .faq {
         max-width: 768px;
@@ -187,6 +197,13 @@
         font-size: 14px;
         line-height: 125%;
     }
+
+    .faq__flower {
+        width: 350px;
+        height: 362px;
+        right: -90px;
+        bottom: 170px;
+    }
 }
 
 @media (min-width: 1600px) {
@@ -206,6 +223,7 @@
     .faq__content {
         width: 712px;
         margin: 30px 0 0;
+        position: relative;
     }
 
     .faq__image-container {
@@ -229,5 +247,12 @@
 
     .faq__answer-text {
         font-size: 16px;
+    }
+
+    .faq__flower {
+        width: 490px;
+        height: 505px;
+        right: -190px;
+        bottom: 55px;
     }
 }

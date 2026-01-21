@@ -79,6 +79,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     </a>
                 </div>
                 </div>
+
+                <div class="contacts__flower">
+                <img src="assets/images/flowers/contacts-Flower.svg">
+                </div>
             </div>
             
             <div class="contacts__map">

@@ -187,7 +187,6 @@
         top: 30px;
         filter: none;
         background: none;
-        z-index: 1;
     }
 
     .hero__flower-mobile {
@@ -332,7 +331,7 @@
 
     .hero__flower {
         left: auto;
-        right: calc(200px + 488px - 165px);
+        right: 150px;
     }
 
     .hero__navigation {

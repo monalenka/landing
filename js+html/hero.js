@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
         <p class="hero__subtitle">Здесь мы поможем вам держать тело в тонусе, а душу - в гармонии.</p>
 
         <div class="hero__flower">
-            <img src="assets/images/Flower.svg" alt="цветок для телефона" class="hero__flower-mobile">
-            <img src="assets/images/FlowerTablet.svg" alt="цветок для планшета" class="hero__flower-tablet">
+            <img src="assets/images/flowers/hero-Flower.svg" alt="цветок для телефона" class="hero__flower-mobile">
+            <img src="assets/images/flowers/hero-FlowerTablet.svg" alt="цветок для планшета" class="hero__flower-tablet">
         </div>
 
         <div class="hero__navigation">

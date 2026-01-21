@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
             
             <div class="faq__image-container">
                 <img src="assets/images/woman-doing-yoga-cleaning-chakra.png" " class="faq__image">
+                <img src="assets/images/flowers/faq-Flower.svg" class="faq__flower">
             </div>
             
             <div class="faq__content">

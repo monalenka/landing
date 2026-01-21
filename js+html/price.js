@@ -92,6 +92,10 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="price__cards">
         ${generatePriceCards(priceData.subscriptions)}
         ${tabletButton}
+        
+        <div class="common__flower">
+            <img src="assets/images/flowers/common-Flower.svg">
+        </div>
     </div>
     `;
     }
