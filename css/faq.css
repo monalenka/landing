@@ -9,7 +9,7 @@
     line-height: 120%;
     font-weight: 400;
     letter-spacing: 0.007em;
-    color: #789776;
+    color: var(--primary);
 }
 
 .faq__image-container {
@@ -95,7 +95,7 @@
 .faq__question-text {
     font-family: var(--f-R);
     font-size: 15px;
-    color: #5B6158;
+    color: var(--secondary);
     text-align: left;
     flex-grow: 1;
     transition: all 0.3s ease;
@@ -114,18 +114,18 @@
     font-family: var(--f-R);
     font-size: 14px;
     line-height: 130%;
-    color: #5B6158;
+    color: var(--secondary);
     margin: 0;
 }
 
 .faq__item.active .faq__icon-circle {
-    background: #789776;
-    border-color: #789776;
+    background: var(--primary);
+    border-color: var(--primary);
 }
 
 .faq__item.active .faq__icon-vertical {
     transform: translate(-50%, -50%) rotate(0deg);
-    background: #FEFBF7;
+    background: var(--bg);
 }
 
 .faq__item.active .faq__question-text {

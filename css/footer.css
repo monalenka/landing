@@ -1,9 +1,9 @@
 .footer {
     max-width: 328px;
     margin: 0 auto;
-    background: #789776;
+    background: var(--primary);
     font-family: var(--f-R);
-    color: #FEFBF7;
+    color: var(--bg);
     padding: 28px 23px;
 }
 
@@ -36,7 +36,7 @@
 
 .footer__menu-link {
     font-size: 12px;
-    color: #FEFBF7;
+    color: var(--bg);
     text-decoration: none;
 }
 
@@ -53,7 +53,7 @@
 .footer__social-link {
     width: 40px;
     height: 40px;
-    border: 1px solid #FEFBF7;
+    border: 1px solid var(--bg);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -61,7 +61,7 @@
 }
 
 .footer__social-link:hover {
-    background: #FEFBF7;
+    background: var(--bg);
 }
 
 .footer__social-link:hover .footer__social-icon {
@@ -108,13 +108,13 @@
 
 .footer__personal {
     font-size: 9px;
-    color: #FEFBF7;
+    color: var(--bg);
     text-decoration: none;
 }
 
 .footer__privacy {
     font-size: 9px;
-    color: #FEFBF7;
+    color: var(--bg);
     text-decoration: none;
 }
 
@@ -182,7 +182,7 @@
     .footer {
         max-width: 1600px;
         padding: 40px 60px;
-        background: #789776;
+        background: var(--primary);
     }
 
     .footer__container {

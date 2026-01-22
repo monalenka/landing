@@ -9,7 +9,7 @@
     line-height: 120%;
     font-weight: 400;
     letter-spacing: 0.007em;
-    color: #789776;
+    color: var(--primary);
     margin: 0;
 }
 
@@ -17,7 +17,8 @@
     font-family: var(--f-R);
     font-size: 15px;
     line-height: 130%;
-    color: #5B6158;
+    color: var(--secondary);
+    ;
     margin: 54px 0 24px 0;
 }
 
@@ -39,7 +40,8 @@
     position: absolute;
     top: 0;
     font-size: 14px;
-    color: #5B6158;
+    color: var(--secondary);
+    ;
 }
 
 .contacts__input {
@@ -68,25 +70,26 @@
 }
 
 .contacts__checkbox-input:checked {
-    background-color: #789776;
-    border-color: #789776;
+    background-color: var(--primary);
+    border-color: var(--primary);
 }
 
 .contacts__checkbox-label {
     font-size: 12px;
-    color: #5B6158;
+    color: var(--secondary);
+    ;
     width: 200px;
 }
 
 .contacts__submit {
     width: 154px;
     height: 43px;
-    background: #789776;
+    background: var(--primary);
     border: none;
     border-radius: 40px;
     font-family: var(--f-R);
     letter-spacing: 0.08em;
-    color: #FEFBF7;
+    color: var(--bg);
     cursor: default;
     transition: all 0.3s ease;
 }
@@ -105,7 +108,7 @@
 .contacts__social-link {
     width: 40px;
     height: 40px;
-    border: 1px solid #789776;
+    border: 1px solid var(--primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -137,7 +140,7 @@
 .contacts__info {
     width: 327px;
     height: 177px;
-    background: #789776;
+    background: var(--primary);
     overflow: hidden;
 }
 
@@ -164,7 +167,7 @@
     font-family: var(--f-R);
     font-size: 14px;
     line-height: 125%;
-    color: #FEFBF7;
+    color: var(--bg);
     text-decoration: none;
     font-variant-numeric: lining-nums proportional-nums;
 }
@@ -235,9 +238,9 @@
         grid-row: 2;
         width: 240px;
         height: 55px;
-        border: 1.32px solid #789776;
+        border: 1.32px solid var(--primary);
         background: transparent;
-        color: #789776;
+        color: var(--primary);
         font-size: 15px;
         font-weight: 500;
     }
@@ -293,7 +296,7 @@
     .contacts__social-link-2 {
         width: 40px;
         height: 40px;
-        border: 1.4px solid #FEFBF7;
+        border: 1.4px solid var(--bg);
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -356,9 +359,9 @@
         grid-column: 5;
         grid-row: 1;
         width: 285px;
-        background: #789776;
+        background: var(--primary);
         border: none;
-        color: #FEFBF7;
+        color: var(--bg);
         justify-self: end;
     }
 

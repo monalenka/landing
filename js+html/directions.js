@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
 
-        const defaultDirection = directions.find(d => d.name === "Здоровая спина") || directions[0];
+        const defaultDirection = directions.find(d => d.name === "Кундалини-йога") || directions[0];
         if (defaultDirection) {
             const defaultIndex = directions.findIndex(d => d.id === defaultDirection.id);
             updateDirectionCard(defaultDirection, defaultIndex);
