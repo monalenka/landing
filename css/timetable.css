@@ -270,6 +270,7 @@ strong {
     }
 
     .timetable__teacher-column {
+        display: block;
         grid-column: 4;
         font-family: var(--f-R);
         font-size: 14px;

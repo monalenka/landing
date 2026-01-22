@@ -7,50 +7,12 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentIndex = 0;
 
     function loadExpertsData() {
-        fetch('data/experts.json')
+        fetch('assets/data/experts.json')
             .then(response => response.json())
             .then(data => {
-                expertsData = data.experts;
+                expertsData = data.data || data.experts;
                 initExperts();
             })
-            .catch(error => {
-                console.error('Ошибка загрузки (для экспертов):', error);
-                expertsData = getFallbackExperts();
-                initExperts();
-            });
-    }
-
-    function getFallbackExperts() {
-        return [
-            {
-                "id": 1,
-                "name": "Ирина Беляева",
-                "imageUrl": "assets/images/experts/1.jpg",
-                "mobileImageUrl": "assets/images/experts/1-m.svg",
-                "bio": "Йога-инструктор с образованием по специальности 'Физическая культура и спорт', имеет сертификат международного уровня и пять лет практического опыта."
-            },
-            {
-                "id": 2,
-                "name": "Анна Беляева",
-                "imageUrl": "assets/images/experts/2.jpg",
-                "mobileImageUrl": "assets/images/experts/2-m.svg",
-                "bio": "Инструктор по стретчингу и пилатесу с образованием по специальности 'Физическая культура и спорт', проходила курсы по стретчингу у ведущих тренеров."
-            },
-            {
-                "id": 3,
-                "name": "Екатерина Волкова",
-                "imageUrl": "assets/images/experts/3.jpg",
-                "mobileImageUrl": "assets/images/experts/3-m.svg",
-                "bio": "Инструктор по пилатесу и здоровой спине с медицинским образованием и сертификатами по лечебной физкультуре и массажу."
-            },
-            {
-                "id": 4,
-                "name": "Мария Смирнова",
-                "imageUrl": "assets/images/experts/4.jpg",
-                "mobileImageUrl": "assets/images/experts/4-m.svg",
-                "bio": "Фитнес-тренер по питанию с дипломом по диетологии и нутрициологии, проходила обучение у ведущих экспертов в области здорового питания."
-            }
-        ];
     }
 
     function getCurrentMode() {
