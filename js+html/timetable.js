@@ -117,7 +117,7 @@ function createModal() {
             closeModal();
         }
     });
-
+    document.body.appendChild(modalOverlay);
     return modalOverlay;
 }
 
